@@ -5,21 +5,25 @@ const API = "http://localhost:8080/";
 //Autenticación de usuario
 const postUser = (userEmail, userPassword) => {
     return axios.post(API + "login", { email: userEmail, password: userPassword})
+};
+
+const getProducts = (productName, productPrice) => {
+    return axios.post(API + "products", { name: productName, price: productPrice })
 }
 
-//Usuario alojado en el session storage
-const getUser = () => {
+//Usuario en el sesionStorage
+/* const getUser = () => {
     return JSON.parse(sessionStorage.getItem("user"))
-}
+}; */
 
-//Token de cada usuario
-const token = () => {
+//Token del usuario
+/* const getToken = () => {
     return getUser().accessToken
-}
+}; */
 
-//Petición para traer lista de productos
-const getProduct = () => {
-    return axios.get(API + "products", { Authorization: "Bearer" + token()})
-}
+//Listado de productos
+/* const getProducts = () => {
+    return axios.get(API + "products", { headers: {authorization: "Bearer" + getToken() }})
+}; */
 
-export { postUser, getUser, token, getProduct }
+export { postUser, getProducts }
