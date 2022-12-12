@@ -6,7 +6,7 @@ function ProductsTable ({ product, clickAdd }) {
     <div className="listProductsContainer">
       <img src={product.image} alt={product.name} />
       <p>{product.name}</p>
-      <p>{product.price}</p>
+      <p>{"$" + product.price}</p>
       <ButtonInclusive text="Agregar" className="btnAdd" onClick={() => clickAdd(product)} />
     </div>
   )

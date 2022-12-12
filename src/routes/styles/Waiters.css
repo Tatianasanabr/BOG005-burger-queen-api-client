@@ -41,7 +41,7 @@
   min-height: 70px;
   text-align: center;
   display: grid;
-  grid-template-columns: 8% 27% 12% 22%;
+  grid-template-columns: 20% 31% 12% 23%;
   justify-content: space-around;
   align-items: center;
   background: #f3d4a0;    
@@ -51,6 +51,7 @@
 .listProductsContainer img {
   height: 50px;    
   margin: 20%;
+  border-radius: 12px;
 }
 
 .listProductsContainer p {
