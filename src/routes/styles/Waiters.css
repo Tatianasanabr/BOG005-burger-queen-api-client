@@ -6,14 +6,76 @@
   box-sizing: border-box;
 }
 
-/* .productsMenu {
-  background-color: lightcoral;
-} */
-
-.waiterOrders {
+.options-container {
   display: flex;
   flex-direction: column;
-  background-image: url("../img/waitersBackground.jpeg");
+  background-image: url("../../img/waitersBackground.jpeg");
+  background-size: 768px 900px;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 50px;
+  justify-items: center;
+  text-align: center;
+}
+
+.optionsListContainer {
+  margin-top: 40px;
+  padding-left: 30px;
+  width: 98%;    
+  text-align: center;
+
+}
+
+.optionMenu {
+  background-color: antiquewhite;
+  border: 2px solid #f3b05a;
+  font-size: 20px;
+  width: 240px;
+  height: 35px;
+}
+
+.listProductsContainer {
+  margin-top: 43px;
+  width: 50%;
+  min-height: 70px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 8% 27% 12% 22%;
+  justify-content: space-around;
+  align-items: center;
+  background: #F3B05A;    
+  border-radius: 20px;   
+}
+
+.listProductsContainer img {
+  height: 50px;    
+  margin: 20%;
+}
+
+.listProductsContainer p {
+  font-size: 14px;
+  align-items: center;    
+}
+
+.listProductsContainer .btnAdd {
+  font-size: 12px;
+  background: white;
+  width: 80px;    
+  border-radius: 15px;
+  border-style: none;
+}
+
+.listProductsOrder {
+  margin-top: 57px;
+}
+
+
+/*
+.options-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../img/waitersBackground.jpeg");
   background-size: 600px 900px;
   height: 900px;
   background-repeat: no-repeat;
@@ -25,7 +87,6 @@
 
 h1 {
   color: antiquewhite;
-  text-shadow: 2px 2px #ff0000;
   font-size: 1.6em;
 }
 
@@ -38,13 +99,11 @@ h2 {
 .linkOrders {
   color: white;
   text-decoration: none;
-  /* margin-left: 4px; */
 }
 
 .linkStatus {
   color: white;
   text-decoration: none;
-  /* margin-left: 6px; */
 }
 
 .link-container {
@@ -59,32 +118,6 @@ h2 {
   background-color: rgba(250, 235, 215, 0.493);
   
 }
-
-/* .buttonsWaiter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-} */
-
-/* .pedidos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #d9d9d9;
-  border-radius: 10px;
-  margin-left: 90px;
-  margin-right: 30px;
-  margin-top: 300px;
-} */
-
-/* .hola {
-    background-color: #2E303E;
-    color: white;
-    border-radius: 15px;
-    border-color: white;
-    font-size: 13px;
-} */
 
 .takeOrders {
   display: flex;
@@ -101,30 +134,9 @@ h2 {
   gap: 10px;
 }
 
-/* .orderNum {
-   margin-right: 150px;
-    margin-left: 20px; 
-} */
-
 .orderNumber {
-  /* 
-    margin-left: 120px;
-    margin-top: -16px;     */
   width: 40px;
 }
-
-/* .buttonProducts {
-    display: flex;
-    flex-direction: column  ;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-.buttonProducts button {
-    background-color: palevioletred;
-    height: 40px;
-    width: 100px;
-} */
 
 .dataProducts {
   display: flex;
@@ -136,7 +148,7 @@ h2 {
 
 @media screen and (max-width: 800px) {
   .waiterOrders {
-    background-image: url("../img/waitersBackground.jpeg");
+    background-image: url("../../img/waitersBackground.jpeg");
     background-size: 800px 1024px;
     height: 1024px;
     width: 100%;
@@ -144,4 +156,4 @@ h2 {
     background-position: center;
     justify-items: center;
   }
-}
+} */
