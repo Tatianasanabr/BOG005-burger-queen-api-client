@@ -44,7 +44,7 @@
   grid-template-columns: 8% 27% 12% 22%;
   justify-content: space-around;
   align-items: center;
-  background: #F3B05A;    
+  background: #f3d4a0;    
   border-radius: 20px;   
 }
 
@@ -69,91 +69,3 @@
 .listProductsOrder {
   margin-top: 57px;
 }
-
-
-/*
-.options-container {
-  display: flex;
-  flex-direction: column;
-  background-image: url("../../img/waitersBackground.jpeg");
-  background-size: 600px 900px;
-  height: 900px;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 50px;
-  justify-items: center;
-  text-align: center;
-}
-
-h1 {
-  color: antiquewhite;
-  font-size: 1.6em;
-}
-
-h2 {
-  font-size: 1.5em;
-  color: antiquewhite;
-  text-shadow: 2px 1.5px #ff0000;
-}
-
-.linkOrders {
-  color: white;
-  text-decoration: none;
-}
-
-.linkStatus {
-  color: white;
-  text-decoration: none;
-}
-
-.link-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 1.3em;
-}
-
-.linkOrders:hover {
-  color: #ac1212;
-  background-color: rgba(250, 235, 215, 0.493);
-  
-}
-
-.takeOrders {
-  display: flex;
-  flex-direction: row;
-  margin-left: 63px;
-  margin-top: 145px;
-  color: azure;
-}
-
-.order-counter {
-  display: flex;
-  align-items: center;
-  margin: 15px auto 15px auto;
-  gap: 10px;
-}
-
-.orderNumber {
-  width: 40px;
-}
-
-.dataProducts {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 5px 20px 5px;
-  text-align: justify;
-  flex-wrap: wrap;
-}
-
-@media screen and (max-width: 800px) {
-  .waiterOrders {
-    background-image: url("../../img/waitersBackground.jpeg");
-    background-size: 800px 1024px;
-    height: 1024px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-items: center;
-  }
-} */

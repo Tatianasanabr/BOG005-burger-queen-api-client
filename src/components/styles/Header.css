@@ -5,13 +5,6 @@
     margin: 0;
 }
 
-/* .hifivelogo {
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: initial;
-} */
-
 .hifivelogo .logohifive {
     display: flex;
     height: 200px;
