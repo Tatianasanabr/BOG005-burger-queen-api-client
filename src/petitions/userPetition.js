@@ -35,52 +35,33 @@ export const getProducts = async () => {
     return res.data
 };
 
-
-
-
-
-/* //Autenticación de usuario
-const postUser = (userEmail, userPassword) => {
-    return axios.post(API + "login", { email: userEmail, password: userPassword})
+export const orderPetition = async (objectProducts, client) => {
+    const res = await axios({
+        method: "POST",
+        url: API + "/orders",
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token,
+        },
+        data: {
+            userId: userId,
+            client: client,
+            products: objectProducts,
+            status: 'pending',
+            dataEntry: new Date().toLocaleString('sv')
+        }
+    });
+    return res.status
 };
 
-//Guarda el usuario logueado en SessionStorage
-const userId = (user) => {
-    sessionStorage.setItem("user", JSON.stringify(user))
+export const viewOrderPending = async () => {
+    const res = await axios({
+        method: 'GET',
+        url: API + '/orders',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token,
+        }
+    });
+    return res.data
 };
-
-const getUserData = () => {
-    return JSON.parse(sessionStorage.getItem("user"))
-};
-
-const getToken = () => {
-    return JSON.parse(sessionStorage.getItem("user"))
-};
-
-const getId = () => {
-    return getUserData().user.id
-};
-
-//Petición para crear usuarios
-const getUser = (user) => {
-    return axios.post(API + "users", user)
-};
-
-//Petición para obtener la info de los usuarios
-const infoUser = async() => {
-    console.log(getToken().accessToken)
-    return await axios({
-      method: "GET", 
-      url:API+'users', 
-      headers: {
-        'content-type': 'application/json',
-        authorization: 'Bearer ' + getToken().accessToken,
-      },         
-    })     
-  }
-
-/* const getProducts = (token) => {
-    return axios.get(API + "products")
-};
-
-export { postUser, userId, getUserData, getUser, getId, getToken, infoUser } */
