@@ -2,7 +2,7 @@ import ButtonInclusive from './Button'
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function CardProductsOrder ({ productSelect, setOrderList, orderList }) {
+function productsOrder ({ productSelect, setOrderList, orderList }) {
 
   function addQuantityProduct() {
     setOrderList((products) => {
@@ -41,9 +41,9 @@ function CardProductsOrder ({ productSelect, setOrderList, orderList }) {
         <p>${totalPriceProduct}</p>
       </div>
       <div className='btnQuantity'>
-        <ButtonInclusive type="button" text='–' className='btnFewer' onClick={() => subtractQuantityProduct()} />
+        <ButtonInclusive type="button" text='– ' className='btnFewer' onClick={() => subtractQuantityProduct()} />
         <p className='pControl'>{productSelect.qty}</p>
-        <ButtonInclusive type="button" text='+' className='btnAdd' onClick={() => addQuantityProduct()} />
+        <ButtonInclusive type="button" text='+ ' className='btnAdd' onClick={() => addQuantityProduct()} />
       </div>
       <div className='btnDelete'>
         <ButtonInclusive type="button" className='trashContainer' onClick={productDelete}><FontAwesomeIcon icon={faTrash} /></ButtonInclusive>
@@ -52,4 +52,4 @@ function CardProductsOrder ({ productSelect, setOrderList, orderList }) {
   )
 }
 
-export default CardProductsOrder
+export default productsOrder

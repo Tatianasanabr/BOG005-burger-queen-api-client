@@ -5,9 +5,9 @@
 
 .landing {
   background-image: url('../../img/landing-background.png');
-  background-size: 600px 900px;
+  background-size: 990px 900px;
   height: 900px;
-  width: 100;
+  width: 900px;
   background-repeat: no-repeat;
 }
 
@@ -16,7 +16,7 @@
   width: 219px;
   height: 72px;
   top: 332px;
-  left: 86px;
+  left: 281px;
   color: white;
   background-color: rgba(224, 51, 77, 1);
   border: 2px solid white;
@@ -29,7 +29,7 @@
 
 .login {
   background-image: url('../../img/login-background.png');
-  background-size: 600px 900px;
+  background-size: 988px 999px;
   height: 1000px;
   background-repeat: no-repeat;
 }
@@ -39,7 +39,8 @@
   flex-direction: column;
   position: absolute;
   justify-content: center;
-  top: 300px;
+  top: 344px;
+  margin-left: 209px;
 }
 
 .form-container input, select {

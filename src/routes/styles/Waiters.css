@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: column;
   background-image: url("../../img/waitersBackground.jpeg");
-  background-size: 768px 900px;
-  height: 900px;
+  background-size: 990px 990px;
+  height: 1000px;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 50px;
@@ -21,16 +21,15 @@
 
 .optionsListContainer {
   margin-top: 40px;
-  padding-left: 30px;
+  padding-left: 10px;
   width: 98%;    
   text-align: center;
 
 }
 
 .optionMenu {
-  background-color: antiquewhite;
-  border: 2px solid #f3b05a;
-  font-size: 20px;
+  background-color: #D9D9D9;
+  font-size: 19px;
   width: 240px;
   height: 35px;
 }
@@ -44,7 +43,8 @@
   grid-template-columns: 20% 31% 12% 23%;
   justify-content: space-around;
   align-items: center;
-  background: #f3d4a0;    
+  background: #f3d4a0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;  
   border-radius: 20px;   
 }
 
@@ -61,12 +61,169 @@
 
 .listProductsContainer .btnAdd {
   font-size: 12px;
-  background: white;
-  width: 80px;    
+  background: #2E303E;
+  color: white;
+  width: 73px;
+  height: 20px;    
   border-radius: 15px;
-  border-style: none;
 }
 
 .listProductsOrder {
   margin-top: 57px;
+}
+
+/*Toma de pedidos*/
+.formOrder {  
+  background-color: #D9D9D9;
+  opacity: 0.8;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  border-radius: 15px;
+  display: inline-grid;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  width: 45%;
+  margin-left: 434px;
+  margin-top: -484px;
+}
+
+.pOrderSummary { 
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formOrder p { 
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.inputNameClient { 
+  border-style: none;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  border-radius: 5px;
+  height: 29px;
+  padding-left: 32px;
+  margin-bottom: 13px;
+  width: 157px;
+  margin-left: 64px;
+}
+
+/*Producto, cantidad y opciones*/
+.containerLabels { 
+  display: grid;
+  grid-template-columns: 30% 28% 20% 0%; 
+}
+
+.containerLabels p {
+  margin: 5px;
+}
+
+.containerPCO {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 25px;
+}
+
+.containerProductOrder {
+  display: grid;
+  grid-template-columns: 35% 20% 25% 15%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.btnQuantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 70px;
+}
+
+.btnFewer,
+.btnAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 14px;
+  width: 20px;
+  background-image: linear-gradient(340deg, #eded71 0, #ebdb68 12.5%, #e4c560 25%, #d7ae59 37.5%, #c49651 50%, #af7f4a 62.5%, #9c6c44 75%, #8b5c3f 87.5%, #7d4f3b 100%);  
+  border-style: none;
+  text-align: center;
+  margin-bottom: -3px;
+  border-radius: 1px;
+  
+}
+
+.pControl {
+  border-style: none;
+  background-color: transparent;
+}
+
+.trashContainer {
+  width: 32px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #D9D9D9;
+  color: black;
+  border-radius: 50%;
+  border-style: none;
+}
+
+.totalPrice {
+  display: flex;
+  height: 35px;
+  background-color: white;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  width: 200px;
+  margin-left: 38px;
+}
+
+.sectionBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.formOrder .btnSend {
+  margin: 5px;
+  background-color: #2E303E;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;  
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  color: white;
+  border-color:white;
+}
+
+.formOrder .btnCancel {
+  color: white;
+  margin: 5px;
+  background-color: #2E303E;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  border-color: white;
 }

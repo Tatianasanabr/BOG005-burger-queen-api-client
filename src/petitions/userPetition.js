@@ -53,15 +53,3 @@ export const orderPetition = async (objectProducts, client) => {
     });
     return res.status
 };
-
-export const viewOrderPending = async () => {
-    const res = await axios({
-        method: 'GET',
-        url: API + '/orders',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + token,
-        }
-    });
-    return res.data
-};

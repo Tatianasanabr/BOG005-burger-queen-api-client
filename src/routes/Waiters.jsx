@@ -45,8 +45,8 @@ export function Waiters () {
     if(productInOrder){
       Swal.fire({
         icon: "error",
-        title: "Oops...",
-        text: "Producto ya agregado a la orden!"
+        title: "Imposible",
+        text: "Este producto ya fue agregado a la orden!"
       })
     } else {
       setOrderList([...orderList, { qty: 1, product: props}])
@@ -68,8 +68,8 @@ export function Waiters () {
     } catch {
       Swal.fire({
         icon: "error",
-        title: "Oops...",
-        text: "No se pudo crear la orden!"
+        title: "Imposible",
+        text: "No es posible crear la orden!"
       })
     }
   }
@@ -100,7 +100,7 @@ export function Waiters () {
           }
         </section>
         <form typeof="submit" className="formOrder" onSubmit={sendOrderPetition}>
-          <p className="pOrderSummary">Pedido en curso</p>
+          <p className="pOrderSummary">Tomando pedidos</p>
           <FormInput
             className="inputNameClient"
             value={nameClient}
@@ -111,7 +111,7 @@ export function Waiters () {
           <section className="containerLabels">
             <p>Producto</p>
             <p>Precio</p>
-            <p>Cantidad</p>
+            <p>Cant</p>
             <p>Eliminar</p>
           </section>
           <div className="containerProductsAdmin">
